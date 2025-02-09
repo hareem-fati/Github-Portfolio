@@ -38,9 +38,9 @@ global shades8 "bar(1, color(navy) fintensity(inten300) lcolor(white)) bar(2, co
 				
 clear all
 		
-use "$idrem_firm\firms_prep" , clear			///Using firm-level data. 
+use "$idrem_firm\firms_prep" , clear				// Using firm-level data. 
 					
-keep if inlist(signup_service, 1)
+keep if inlist(signup_service, 1)					// Keeping only firms that signed-up
 			
 merge 1:m firm_id using "$idrem_job\adlisting_prep", gen(ad_firm)	///merging firm-level data with job-level data. 
 		
@@ -53,7 +53,6 @@ drop if EB_type_fs == 0
 drop if EB_type_fs == .
 
 
-	
 isid firm_id
 
 do		"${dofilesgit}\cleaning\analysis_prep\firmsbl_subfiles\firmsbl_labels_updated.do", nostop	//Assigning firm-level labels.
@@ -63,7 +62,7 @@ run "$Do_FS\\$FS_adl_labels" , nostop		//Assigning job-level variables.
 	
 			
 /******************************************************************
-					Part II: Generating Relevant Variables
+				Part II: Generating Relevant Variables For Graphs
 ******************************************************************/		
 	//Harmonizing Industry Classification Variable//
 
@@ -99,7 +98,7 @@ run "$Do_FS\\$FS_adl_labels" , nostop		//Assigning job-level variables.
 	 gen method_advertisment7 = 1 if rec_cons_ad7_ad == 1 
 	 replace method_advertisment7 = 0 if rec_cons_ad7_ad == 0
 	 
-				//Capturing Baseline Information// 
+				//Capturing Firm-level Baseline Information// 
 
 	replace method_advertisment1 = 1 if fsbl_rv_harm_news_cons == 1  
 	replace method_advertisment2 = 1 if fsbl_rv_harm_web_cons == 1  
