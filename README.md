@@ -55,6 +55,17 @@ This repository contains code samples demonstrating my proficiency in **Stata**,
 
 ---
 
+## **INTERACTIVE DASHBOARDS**
+1. **PowerBI Dashboard**  
+   - **Description**: An interactive PowerBI dashboard that visualizes various SDGs in Africa. 
+   - **Weblink**: https://app.powerbi.com/reportEmbed?reportId=408322aa-ad69-460d-9ef4-96beb2d35b36&autoAuth=true&ctid=d7811cde-ecef-496c-8f91-a1786241b99c
+   - **Contribution**: Sole author.
+
+---
+
+
+
+
 ## **How to Access the Code**
 - **GitHub Repository**: [https://github.com/hareem-fati/Github-Portfolio]  
   (Ensure the repository is public and contains only the relevant files, not the entire repository.)  
