@@ -1,6 +1,6 @@
 # GitHub Code Repository
 
-This repository contains code samples demonstrating my proficiency in **Stata**, **R**, and **SurveyCTO form design**. Below is a summary of each file and my contributions.
+This repository contains code samples demonstrating my proficiency in **Stata**, **R**, **SurveyCTO form design**, and **PowerBI Dashboard**. Below is a summary of each file and my contributions.
 
 ---
 
